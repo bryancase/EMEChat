@@ -95,7 +95,19 @@
     </footer>
 
     <!-- Put Chat Widget 1 Line Below -->
-    
+    <script type="text/javascript">
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://vailresorts-prod.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', '5299a434-a9af-4600-a05d-ea1464f2faa3');
+  amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#123456' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIaEdEc0hWQU9TcWFkUjZBZVY0bDJ6cnBCUVdIZ0EyUC9OWkxRSmRQWGEzY0FFaFdSTGY4UHRtRnNHNGdhM29LbmlkQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNeFl4K3JtT3lJdHR0QmxoVUFnRVFnQ3R3SXErWlNoWTF1RXRXaDBBRWh6UFAwUlZ3dG03NHJEcmFRTHgwM2JZUzJ0MENuUFdjTHVnbTBZZys6OkRpYmJsYXRrVTQyZmlzVFBIWjdGV2IwYjRoZmFQcTJabTlGOERZWUVGVjY0QjJBTUdpUWpyOVJPUnBpMWoyeloySHZUS3Jkb200eTlFQzRwNkxkdGpOaXVQaFE5RWJuOEZ1ZTNOby80OHhZbmxqbkdNK1hIYkdyazNXOUVoVkR6b0ZiZVBTL0kvQWpIdk9zaHpQdzFUcEdnNmtZSk53QT0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+</script>
     <!-- Chat Widget Above -->
   </body>
 </html>
